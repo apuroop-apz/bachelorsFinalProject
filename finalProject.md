@@ -64,15 +64,31 @@ SLR Systems can be categorized according to :
 ### Skin Segmentation
 - High image contrast between skin and non-skin regions by use of colored gloves.
   - Segmented using threshold color values.
-    figure1 figure2
+  
+    ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure1.png)
+    
+    ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure2.png)
+    
   - Use of Canny Edge Detection Algorithm, works when only hand is captured.
-    figure3 figure4
+  
+    ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure3.png)
+    
+    ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure4.png)
  
 ### Preprocessing Filters
 - Filters such as Sobel and Wiener filters optimize image for feature extraction. Work best with colored gloves.
 #### NATURAL
+    
+   ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure5.png)
+    
+   ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure6.png)
+    
 #### WHITE GLOVES
-
+   
+   ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure7.png)
+    
+   ![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure8.png)
+   
 ### Image Features
 - Feature is used to denote a piece of information which is relevant for solving the computational task related to a certain application.
 - Two approaches for using features are :
@@ -100,7 +116,7 @@ SLR Systems can be categorized according to :
 - Most popular method is Principal Component Analysis, and takes pixel-based feature vectors as input.
 - Finds eigen vectors and eigen values that represent the image vectors.
 
-Figure!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure9.png)
 
 ### Classification
 - Euclidean distance metric can be used effectively to classify the gestures.
@@ -118,7 +134,8 @@ Figure!!
 
 ## Implementation
 ### Overall Description
-Figure!!
+
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure91.png)
 
 #### Important functions performed by our SLR system:
 - Obtain letter-signs as input via the webcam.
@@ -168,10 +185,10 @@ Figure!!
 - Hence, the approach adopted was feature extraction by Principal Component Analysis.
 
 ### Detailed Design
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure92.png)
 
 ### Pre-processing
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure93.png)
 
 ### PCA Algorithm
 1. Convert images to image column vectors. Append all training images to create image matrix A.
@@ -201,7 +218,7 @@ class is the jth class and the other is all classes other than j. That is, one c
 - Euclidean Distance is used to recognize an object.
 - Choosing the closest training image is called a 1‐nearest neighbor strategy.
 
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure94.png)
 
 ### One-Against-All (SVM)
 - The multiclass SVM classifies the data in one of 36 classes, based on the output  of  the  decision  function  which  is  employed  as  an  index  to indicate how strongly an image belongs to a class.
@@ -212,7 +229,9 @@ Figure!!!
   - http://www.massey.ac.nz/~albarcza/gesture_dataset2012.html
 - The dataset contains 900 images of ASL gestures, with 25 samples of 26 alphabets and 10 numerals each.
 
-Figure!!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure95.png)
+
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure96.png)
 
 - Some signs in the ASL letter and digit alphabet are represented with the same or very similar gestures. Such signs are most likely to be classified as one of the signs, and therefore affect the accuracy of any SLR system.
 - In order to improve accuracy, these signs must either be differentiated in representation, or tagged, or predicted in context.
@@ -229,11 +248,14 @@ The following is the list of such signs in ASL:
 
 These are the signs of the ASL (alphabet and numbers) as used in our training data set :
 
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure97.png)
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure98.png)
+
+**FIGURE III: ASL ALPHABETS AND NUMBERS USED IN OUR TRAINING DATA SET**
 
 These are the signs of the ASL (alphabet and numbers) as created by us and used in our testing data set :
 
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure99.png)
 
 ## Result & Analysis
 ### Testing and Results
@@ -242,7 +264,7 @@ Figure!!!
 - For signer independent testing, 93 images of 2 signers captured by webcams were used.
 - The result of the testing has been presented in 2 ways – one where we consider 32 unique signs and one where we consider 23 signs after we merge similar signs into a joint class.
 
-Figure!!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figures/figure999.png)
 
 ## Conclusion
 ### Scope for Future Work
