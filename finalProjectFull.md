@@ -465,7 +465,7 @@ The proposed system comprises of following steps:
 Figure 1 describes the proposed methodology for hand posture recognition using PCA. Figure
 2 shows the detailed design of SLR using PCA.
 
-![alt text]()
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig1.png)
 
 
 **Image Capture**: The system takes in finger spelt images featuring only hands against
@@ -509,7 +509,6 @@ of the image to be binarized. With this method, a binarized image has pixel valu
 region and 0 elsewhere. Holes in the hand region are sometimes caused by poor
 lighting, shadow, occlusions or other noise.
 
-
 These are filled using a small repeating disc-shaped structural element that minimally
 connects disconnected portions of the signing hand. This is done so that the majority portion of 
 the binary image, which is the hand, is a connected component that can be segmented for later use. 
@@ -539,7 +538,7 @@ in formal or plot signing. Several sign language speech communities use fingersp
 or smaller degree. At the high end of the scale, fingerspelling makes
 up about 8.7% of casual signing in ASL, and 10% of casual signing in Auslan.
 
-Figure!!
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig2.png)
 
 The following Figure 4 shows the resultant image features after applying in image
 processing. First original RGB image, YCbCr image, Isolated Channel Representation, Binarized, 
@@ -551,9 +550,9 @@ shown. Image feature is used to denote a piece of information which is relevant 
 computational task related to a certain application. Two approaches for using features are
 feature selection and feature extraction.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig3.1.png)
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig3.2.png)
 
 #### Following Table shows various forms of Feature Selection:
 | Relative Position of Hands | Relative Position of Hands to Body | Single Hand Features |
@@ -594,7 +593,7 @@ compared with those of the training images using the Euclidean Distance metric. 
 computing Euclidean Distance between two points is computed by taking the square root of
 the sum of the squares of the differences in each dimension, shown in equation (1).
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig4.png)
 
 Where d is the Euclidean Distance measure between the column vectors of the training and
 testing Eigen images. The test image is recognized as the sign represented in the training instance 
@@ -619,9 +618,10 @@ was created by us, by capturing images from a webcam of 2 users signing 2 instan
 and 10 numerals each (a total of 144 images). The signs of the ASL (alphabets and numbers) used in 
 our training dataset is shown in Figure 6 and Figure 7 respectively.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig5.png)
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig6.png)
+
 
 ### Similarity between Signs
 In principle, there are 36 classes in the training dataset. However, there are gestures that
@@ -645,19 +645,21 @@ Recognition  rate is  defined as  the ratio of the number of successfully recogn
 images to the number of samples used for testing in the online recognition phase. The results
 of our SLR system are shown in Table II. The recognition rate for PCA is shown in figure 8.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig8.png)
 
 The  recognition  rates  given  by  Multiclass  SVM  are  shown  in  Table  III  and graphically
 represented in Figure 9.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig9.png)
 
 Recognition rate is defined as the ratio of number of successful recognition of test
 images to the number of samples used for testing in the recognition phase. The recognition rate of 
 PCA and multi-class SVM are compared and tabulated in Table IV, graphically
 represented in Figure 10.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/tab10.png)
+
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig10.png)
 
 ### Time Analysis
 Computation time is another important factor to evaluate the classifier. The time for
@@ -665,7 +667,7 @@ SVM training was not considered, since the parameters of the SVM keep unchanged 
 sent all the 900 images into the classifier, recorded corresponding computation time, computed the 
 average value, depicted consumed time of different stages shown in Figure 11.
 
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig11.png)
 
 For each 256 X 256 image, the averaged computation time on feature extraction, feature
 reduction, and SVM classification is 0.023s, 0.0187s, and 0.0031s, respectively. The feature 
@@ -677,11 +679,11 @@ rapid enough for a real time diagnosis.
 
 ### Screen Shots
 
-Figure
-
-Figure
-
-Figure
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig12.png)
+---------------
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig13.png)
+---------------
+![alt text](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/figsForFullVer/fig14.png)
 
 ## Conclusion
 A Sign Language Recognition system was implemented using PCA as well as SVM and
