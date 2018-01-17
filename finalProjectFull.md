@@ -9,15 +9,15 @@ Table of contents
   - [MATLAB Environment](#matlab-environment)
 - [Literature Review and Problem Identification](#literature-review-and-problem-identification)
 - [Methodology](#methodology)
-  - [Principal Component Analysis (PCA)](#principal-component-analysis-(pca))
-  - [Support Vector Machine (SVM)](#support-vector-machine-(svm))
+  - [Principal Component Analysis (PCA)](#principal-component-analysis--pca-)
+  - [Support Vector Machine (SVM)](#support-vector-machine--svm-)
   - [PCA Algorithm](#pca-algorithm)
   - [SVM Algorithm](#svm-algorithm)
 - [Implementation](#implementation)
   - [Image Processing](#image-processing)
   - [Principal Component Analysis and Feature extraction](#principal-component-analysis-and-feature-extraction)
   - [Classification](#classification)
-- [Result & Analysis](#result--analysis)
+- [Result & Analysis](#result-analysis)
   - [Dataset](#dataset)
   - [Similarity between Signs](#similarity-between-signs)
   - [Recognition Rate](#recognition-rate)
@@ -247,8 +247,7 @@ controls how the UI behaves. This code file provides code to initialize the UI, 
 framework for the UI callbacks. Callbacks are functions that execute when the user interacts
 with a UI component. Use the MATLAB Editor to add code to these callbacks.
 
-
-## LITERATURE REVIEW AND PROBLEM IDENTIFICATION
+## Literature Review and Problem Identification
 Various works have been carried out previously on various sign language recognition techniques. The 
 research on Gesture recognition system can be classified into two types first is the use of 
 electromechanical devices. This type of system affects the signer’s natural signing ability. The 
@@ -301,8 +300,8 @@ recognition system that has been developed using skin color segmentation and
 Artificial Neural Network.
 
 
-## METHODOLOGY
-### PRINCIPAL COMPONENT ANALYSIS (PCA)
+## Methodology
+### Principal Component Analysis (PCA)
 Among clustering algorithms, PCA algorithm is really a straightforward method for dimension 
 reduction and clustering analysis on non-labeled data. In this article, we demonstrate a simple 
 implementation of this algorithm, by computing eigenvectors and eigenvalues of covariance matrix. 
@@ -357,7 +356,7 @@ The proposed SLR system using PCA can perform the following important functions:
 4. Obtain SVM classifier structure to classify input images
 5. Identify the alphabets that are being spelt out.
 
-### SUPPORT VECTOR MACHINE (SVM)
+### Support Vector Machine (SVM)
 Support  Vectors   Machines  (SVM)   have   recently  shown   their   ability  in pattern
 recognition and classification. The aim of Support Vector Machine is to evaluate the potentiality 
 of SVM on image recognition and image classification tasks. Intuitively, given a set of points 
@@ -420,7 +419,7 @@ Continue this step while the image has not yet been classified and more than two
 left to train the SVM. Obtain the label corresponding to the class to which test image I belongs.
 6. Multiclass-SVM SLR System ends.
 
-## IMPLEMENTATION
+## Implementation
 ### Image Processing
 Image processing is a method to convert an image into digital form and perform some operations on 
 it, in order to get an enhanced image or to extract some useful information from it. It is a type 
@@ -660,7 +659,7 @@ represented in Figure 10.
 
 Figure
 
-### Time Analysis:
+### Time Analysis
 Computation time is another important factor to evaluate the classifier. The time for
 SVM training was not considered, since the parameters of the SVM keep unchanged after training. We 
 sent all the 900 images into the classifier, recorded corresponding computation time, computed the 
@@ -684,7 +683,7 @@ Figure
 
 Figure
 
-## CONCLUSION
+## Conclusion
 A Sign Language Recognition system was implemented using PCA as well as SVM and
 tested on signer dependent and independent fingerspelling images. A novel approach to achieve 
 signer independence was implemented, which involved processing the images to achieve a standard 
@@ -715,7 +714,7 @@ Yet another possible design alternate to improve speed and accuracy of SLR syste
 detection of same/similar signs, could be the use of custom features, which
 is an area that needs to be explored in further research.
 
-## REFERENCES
+## References
 [1]       Moghaddam,  M,  Rasht,  Iran,  Nahvi,  M,  Pak,  R.H, “Static Persian  Sign  Language
 Recognition  Using  Kernel-Based  Feature  Extraction,”  Machine  Vision  and Image
 Processing, 2011.
