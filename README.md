@@ -7,3 +7,6 @@ Principal Component Analysis (PCA) is then performed on these binary images usin
 
 To evaluate the impact of features on sign recognition rate, classifiers such as minimum distance, SVM is used. Experimental trials indicate  higher  recognition  rate  for  PCA  in comparison to those of other techniques and also previous works on ASL recognition.
 
+## [Documentation EXTENDED VERSION](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/finalProjectFull.md "EXTENDED VERSION")
+
+## [Documentation SHORT VERSION](https://github.com/apuroop-apz/bachelorsFinalProject/blob/master/finalProjectShort.md "SHORT VERSION")
